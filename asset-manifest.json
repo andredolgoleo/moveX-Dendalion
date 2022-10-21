@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/moveX-Dendalion/static/css/main.69069e8c.css",
-    "main.js": "/moveX-Dendalion/static/js/main.837487ab.js",
+    "main.css": "/moveX-Dendalion/static/css/main.7c361f70.css",
+    "main.js": "/moveX-Dendalion/static/js/main.3c5df970.js",
     "static/js/787.28cb0dcd.chunk.js": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js",
     "static/media/settingIcon.svg": "/moveX-Dendalion/static/media/settingIcon.6785f912881efd7aee136c70ebb96215.svg",
     "static/media/showImageIcon.svg": "/moveX-Dendalion/static/media/showImageIcon.3c2652e26ba7aa96c70a080a37d1566a.svg",
+    "static/media/popUpClose.svg": "/moveX-Dendalion/static/media/popUpClose.f2660611bfd1dc5ed33299473880075b.svg",
     "static/media/doubleChevron.svg": "/moveX-Dendalion/static/media/doubleChevron.492b5ad778c6398329f0ae3cfd0d2cfa.svg",
     "static/media/cross.svg": "/moveX-Dendalion/static/media/cross.ee73ee7a05768128783be88dd7590723.svg",
     "static/media/settingsFieldsIcon.svg": "/moveX-Dendalion/static/media/settingsFieldsIcon.43d038b158b8e9c019fcd3303ffc888a.svg",
@@ -19,12 +20,12 @@
     "index.html": "/moveX-Dendalion/index.html",
     "static/media/searchIcon.svg": "/moveX-Dendalion/static/media/searchIcon.94e72c56bac2248422532456dfbeb996.svg",
     "static/media/checkBox.svg": "/moveX-Dendalion/static/media/checkBox.7dee5b6a52631d8c977a9fc2f2cadaed.svg",
-    "main.69069e8c.css.map": "/moveX-Dendalion/static/css/main.69069e8c.css.map",
-    "main.837487ab.js.map": "/moveX-Dendalion/static/js/main.837487ab.js.map",
+    "main.7c361f70.css.map": "/moveX-Dendalion/static/css/main.7c361f70.css.map",
+    "main.3c5df970.js.map": "/moveX-Dendalion/static/js/main.3c5df970.js.map",
     "787.28cb0dcd.chunk.js.map": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69069e8c.css",
-    "static/js/main.837487ab.js"
+    "static/css/main.7c361f70.css",
+    "static/js/main.3c5df970.js"
   ]
 }
