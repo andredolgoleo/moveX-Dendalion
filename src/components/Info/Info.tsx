@@ -5,14 +5,38 @@ import { ReactComponent as ArrowNext } from './img/arrowNext.svg';
 import { getAllData } from '../api/api';
 import { Data } from './Types/Data';
 
+import classNames from 'classnames';
+
 import './styles/Info.scss';
 
 const data = getAllData().sort(() => Math.random() - 0.5);
 
-export const Info: React.FC = () => {
+type Props = {
+  isImageView: boolean,
+  isCategoryOpen: boolean
+};
+
+const arr = [{}, {}, {}, 'b', 'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b'];
+
+arr.forEach(item => {
+  console.log(arr.indexOf(item));
+})
+
+
+export const Info: React.FC<Props> = ({
+  isImageView,
+  isCategoryOpen
+}) => {
   const [perPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredData, setFilteredData] = useState<Data[]>(data);
+
+
+  const amountOfPages = Math.ceil(filteredData.length / perPage);
+
+  console.log(amountOfPages);
+
+
 
   const [isVisiable, setIsVisiable] = useState(true);
 
@@ -49,21 +73,27 @@ export const Info: React.FC = () => {
         data={foundItems}
         currentPage={currentPage}
         onPageChange={handleOnPageChange}
+        isImageView={isImageView}
       />
       <div className="fields__pagination pagination">
         <span>
           <span>
             <ArrowPrev
               onClick={() => {
+                if (currentPage === 1) return;
                 setCurrentPage(currentPage - 1)
               }}
             />
           </span>
           <span
             onClick={() => {
+              if (currentPage === 1) return;
               setCurrentPage(currentPage - 1)
             }}
-            className='pagination__word-prev'
+            className={classNames(
+              'pagination__word-prev',
+              {'pagination__word-prev--disabled': currentPage === 1}
+            )}
           >
             Пред
           </span>
@@ -92,7 +122,10 @@ export const Info: React.FC = () => {
                     handleOnPageChange(+e.currentTarget.innerText)
                   }}
                   key={index}
-                  className='pagination__num pagination__num--active'
+                  className={classNames(
+                    'pagination__num',
+                    { 'pagination__num--active': currentPage === index + 1 }
+                  )}
                 >
                   {index + 1}
                 </span>
@@ -109,6 +142,7 @@ export const Info: React.FC = () => {
           <span>
             <ArrowNext
               onClick={() => {
+                if (currentPage === amountOfPages) return;
                 setCurrentPage(currentPage + 1)
               }}
             />

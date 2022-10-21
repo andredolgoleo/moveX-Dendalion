@@ -109,12 +109,6 @@
   }
 
   &__pagination {
-    // width: 100%;
-    background: linear-gradient(180deg, #5A8FFF 0%, #003094 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 
     position: absolute;
 
@@ -131,6 +125,12 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 15px;
+
+      background: linear-gradient(180deg, #5A8FFF 0%, #003094 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
     }
   }
 
@@ -138,6 +138,12 @@
     &__word-prev {
       margin-left: 2px;
       margin-right: 40px;
+
+      background: #B4B4B4;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
     }
 
     &__word-next {
@@ -160,8 +166,6 @@
 .table {
   display: block;
   margin-top: 15px;
-  height: 720px;
-  overflow-y: scroll;
 
   &__checkbox {
 
@@ -211,6 +215,8 @@
     margin-top: 13px;
 
     tr {
+      display: flex;
+      align-items: center;
       height: 40px;
       background-color: #fff;
       position: relative;
@@ -227,7 +233,6 @@
         line-height: 40px;
 
         @include tableItemPosition();
-
       }
 
       .item-status {
@@ -267,15 +272,27 @@
       }
     }
   }
+
+  &__flex-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    tr {
+      margin: 0;
+    }
+  }
 }
 
 .photo__card {
   box-sizing: border-box;
   width: 316px;
   height: 316px !important;
-  padding-left: 10px;
-  padding-right: 11px;
-  padding-bottom: 10px;
+
+  &--wrapper {
+    display: block;
+    position: relative;
+  }
 
   .card__title {
     display: flex;
@@ -318,10 +335,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -60px;
 
   img {
-    width: 300px;
+    width: 250px;
   }
 }
 

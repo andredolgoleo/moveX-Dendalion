@@ -10,10 +10,22 @@ import listenForOutsideClicks from './handleClickOutSide';
 
 import './styles/Functionality.scss';
 
-export const Functionality: React.FC = () => {
+type Props = {
+  onChangeImageView: (state: boolean) => void,
+  onCategoryButton: (state: boolean) => void,
+}
+
+export const Functionality: React.FC<Props> = ({
+  onChangeImageView,
+  onCategoryButton
+}) => {
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
   const [listening, setListening] = useState(false);
-  const [showImage, setShowImage] = useState(false)
+  const [showImage, setShowImage] = useState(false);
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+
+  console.log(isCategoryOpen);
+
 
   const settingsOpenRef = useRef<any>(null);
 
@@ -189,7 +201,8 @@ export const Functionality: React.FC = () => {
                 <div className='settings__show-image-switcher'>
                   <ShowImagIcon
                     onClick={() => {
-                      setShowImage(true);
+                      onChangeImageView(!showImage)
+                      setShowImage(!showImage);
                     }}
                   />
                 </div>
@@ -209,7 +222,15 @@ export const Functionality: React.FC = () => {
         </div>
 
         <div className="menu__buttons-third-section">
-          <button className='buttons__button'>Категория +</button>
+          <button
+            className='buttons__button'
+            onClick={() => {
+              setIsCategoryOpen(!isCategoryOpen);
+              onCategoryButton(!isCategoryOpen);
+            }}
+          >
+            Категория +
+          </button>
         </div>
 
         <div className="menu__buttons-fourth-section">
@@ -234,7 +255,7 @@ export const Functionality: React.FC = () => {
   );
 };
 
-const higherOrderComponent = (Functionality :any) => {
+const higherOrderComponent = (Functionality: any) => {
   class HOC extends React.Component {
     render() {
       return <Functionality />

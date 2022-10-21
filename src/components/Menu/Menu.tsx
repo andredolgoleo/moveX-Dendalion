@@ -5,12 +5,23 @@ import { Filter } from './Filter';
 
 import './styles/Menu.scss';
 
-export const Menu: React.FC = () => {
+type Props = {
+  onChangeImageView: (state: boolean) => void,
+  onCategoryButton: (state: boolean) => void,
+}
+
+export const Menu: React.FC<Props> = ({
+  onChangeImageView,
+  onCategoryButton
+}) => {
 
   return (
     <>
       <div className='menu__functionality'>
-        <Functionality />
+        <Functionality
+          onCategoryButton={onCategoryButton}
+          onChangeImageView={onChangeImageView}
+        />
       </div>
 
       <div className="menu__filter filter">
