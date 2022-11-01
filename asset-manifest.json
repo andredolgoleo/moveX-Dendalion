@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moveX-Dendalion/static/css/main.d52c2a3d.css",
-    "main.js": "/moveX-Dendalion/static/js/main.83ac1e1b.js",
+    "main.css": "/moveX-Dendalion/static/css/main.9e8e24b1.css",
+    "main.js": "/moveX-Dendalion/static/js/main.b580a6ff.js",
     "static/js/787.28cb0dcd.chunk.js": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js",
     "static/media/montserrat-semibold.woff": "/moveX-Dendalion/static/media/montserrat-semibold.168d5b114e5a6d216802.woff",
     "static/media/montserrat-medium.woff": "/moveX-Dendalion/static/media/montserrat-medium.124bdbbc44b5aae423df.woff",
@@ -25,17 +25,16 @@
     "static/media/arrowUp.svg": "/moveX-Dendalion/static/media/arrowUp.53e2880f48d30be77f0125bbaff26d31.svg",
     "static/media/arrowNext.svg": "/moveX-Dendalion/static/media/arrowNext.9b5eeb896237c63aacd977912cf2f7b0.svg",
     "static/media/arrowPrev.svg": "/moveX-Dendalion/static/media/arrowPrev.2e52dd97e41002b80a95fd4eda0c6294.svg",
-    "static/media/arrowDown.svg": "/moveX-Dendalion/static/media/arrowDown.69d3bd7ad77666c15dbe69d66b7b4ce6.svg",
     "static/media/actualIcon.svg": "/moveX-Dendalion/static/media/actualIcon.18b6c22ae87b7a9357c41b717c464cbe.svg",
     "static/media/actions.svg": "/moveX-Dendalion/static/media/actions.7e24886ece3dfab6b87ac9391e3a8657.svg",
     "index.html": "/moveX-Dendalion/index.html",
     "static/media/searchIcon.svg": "/moveX-Dendalion/static/media/searchIcon.94e72c56bac2248422532456dfbeb996.svg",
-    "main.d52c2a3d.css.map": "/moveX-Dendalion/static/css/main.d52c2a3d.css.map",
-    "main.83ac1e1b.js.map": "/moveX-Dendalion/static/js/main.83ac1e1b.js.map",
+    "main.9e8e24b1.css.map": "/moveX-Dendalion/static/css/main.9e8e24b1.css.map",
+    "main.b580a6ff.js.map": "/moveX-Dendalion/static/js/main.b580a6ff.js.map",
     "787.28cb0dcd.chunk.js.map": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d52c2a3d.css",
-    "static/js/main.83ac1e1b.js"
+    "static/css/main.9e8e24b1.css",
+    "static/js/main.b580a6ff.js"
   ]
 }
