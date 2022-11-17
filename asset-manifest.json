@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/moveX-Dendalion/static/css/main.887e9b50.css",
-    "main.js": "/moveX-Dendalion/static/js/main.d5cf7aa6.js",
+    "main.js": "/moveX-Dendalion/static/js/main.ed636ce2.js",
     "static/js/787.28cb0dcd.chunk.js": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js",
     "static/media/montserrat-semibold.woff": "/moveX-Dendalion/static/media/montserrat-semibold.168d5b114e5a6d216802.woff",
     "static/media/montserrat-medium.woff": "/moveX-Dendalion/static/media/montserrat-medium.124bdbbc44b5aae423df.woff",
@@ -68,11 +68,11 @@
     "static/media/searchIcon.svg": "/moveX-Dendalion/static/media/searchIcon.94e72c56bac2248422532456dfbeb996.svg",
     "static/media/dropDownIcon.svg": "/moveX-Dendalion/static/media/dropDownIcon.4dea5a22b61bfe8114d74f8286b07859.svg",
     "main.887e9b50.css.map": "/moveX-Dendalion/static/css/main.887e9b50.css.map",
-    "main.d5cf7aa6.js.map": "/moveX-Dendalion/static/js/main.d5cf7aa6.js.map",
+    "main.ed636ce2.js.map": "/moveX-Dendalion/static/js/main.ed636ce2.js.map",
     "787.28cb0dcd.chunk.js.map": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.887e9b50.css",
-    "static/js/main.d5cf7aa6.js"
+    "static/js/main.ed636ce2.js"
   ]
 }
