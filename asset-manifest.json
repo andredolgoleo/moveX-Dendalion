@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moveX-Dendalion/static/css/main.826d2dee.css",
-    "main.js": "/moveX-Dendalion/static/js/main.6fbb31b3.js",
+    "main.css": "/moveX-Dendalion/static/css/main.887e9b50.css",
+    "main.js": "/moveX-Dendalion/static/js/main.d5cf7aa6.js",
     "static/js/787.28cb0dcd.chunk.js": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js",
     "static/media/montserrat-semibold.woff": "/moveX-Dendalion/static/media/montserrat-semibold.168d5b114e5a6d216802.woff",
     "static/media/montserrat-medium.woff": "/moveX-Dendalion/static/media/montserrat-medium.124bdbbc44b5aae423df.woff",
@@ -47,6 +47,7 @@
     "static/media/analyt.svg": "/moveX-Dendalion/static/media/analyt.8d07c5197495ffcdaf756827f59aa3ab.svg",
     "static/media/graph.svg": "/moveX-Dendalion/static/media/graph.c8622718d7cf0bfe55783056ccdbdb57.svg",
     "static/media/saveButton.svg": "/moveX-Dendalion/static/media/saveButton.15afa25cb395ddde7d0f7a20f86b94f8.svg",
+    "static/media/storage.svg": "/moveX-Dendalion/static/media/storage.b462cf3364897692f22d22690429c8d7.svg",
     "static/media/pocket.svg": "/moveX-Dendalion/static/media/pocket.393fcff04d39d4e917868a733128a7f4.svg",
     "static/media/activeBurger.svg": "/moveX-Dendalion/static/media/activeBurger.6efefd9f55c0dae936491aa990a1baac.svg",
     "static/media/arrowUp.svg": "/moveX-Dendalion/static/media/arrowUp.53e2880f48d30be77f0125bbaff26d31.svg",
@@ -66,12 +67,12 @@
     "static/media/dropDown.svg": "/moveX-Dendalion/static/media/dropDown.4dea5a22b61bfe8114d74f8286b07859.svg",
     "static/media/searchIcon.svg": "/moveX-Dendalion/static/media/searchIcon.94e72c56bac2248422532456dfbeb996.svg",
     "static/media/dropDownIcon.svg": "/moveX-Dendalion/static/media/dropDownIcon.4dea5a22b61bfe8114d74f8286b07859.svg",
-    "main.826d2dee.css.map": "/moveX-Dendalion/static/css/main.826d2dee.css.map",
-    "main.6fbb31b3.js.map": "/moveX-Dendalion/static/js/main.6fbb31b3.js.map",
+    "main.887e9b50.css.map": "/moveX-Dendalion/static/css/main.887e9b50.css.map",
+    "main.d5cf7aa6.js.map": "/moveX-Dendalion/static/js/main.d5cf7aa6.js.map",
     "787.28cb0dcd.chunk.js.map": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.826d2dee.css",
-    "static/js/main.6fbb31b3.js"
+    "static/css/main.887e9b50.css",
+    "static/js/main.d5cf7aa6.js"
   ]
 }
