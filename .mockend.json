@@ -1,7 +1,5 @@
 {
-  "products": {
-    {
-      "name": "another name"
-    }
+  "Post": {
+    "name": "another name"
   }
 }
