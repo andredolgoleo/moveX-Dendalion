@@ -1,0 +1,142 @@
+.resizeable {
+  display: flex;
+  margin-top: 15px;
+  gap: 15px;
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    min-width: 30px;
+    max-width: 450px;
+    user-select: none;
+
+    &::after {
+      box-sizing: border-box;
+      display: block;
+      content: '';
+      width: 100.5%;
+      height: 100.5%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      // background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 107 677' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.7' x='0.5' y='0.5' width='106' height='676' rx='7.5' stroke='%235A8FFF' stroke-linecap='square' stroke-linejoin='round' stroke-dasharray='20 20'/%3E%3C/svg%3E ");
+      background-size: contain;
+      position: absolute;
+      background-image: repeating-linear-gradient(166deg, #5a8fff, #5a8fff 21px, transparent 21px, transparent 39px, #5a8fff 39px), repeating-linear-gradient(256deg, #5a8fff, #5a8fff 21px, transparent 21px, transparent 39px, #5a8fff 39px), repeating-linear-gradient(-14deg, #5a8fff, #5a8fff 21px, transparent 21px, transparent 39px, #5a8fff 39px), repeating-linear-gradient(76deg, #5a8fff, #5a8fff 21px, transparent 21px, transparent 39px, #5a8fff 39px);
+      background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+      background-position: 0 0, 0 0, 100% 0, 0 100%;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      user-select: none;
+      z-index: -1;
+    }
+  }
+
+  &__thead {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    height: 52px;
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding-top: 10px;
+    padding-left: 12px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    position: relative;
+
+    left: 1px;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 99%;
+      height: 101%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #5A8FFF;
+      opacity: 0.1;
+      border-radius: 8px;
+      z-index: -1;
+    }
+  }
+
+  &__th {
+    display: block;
+    padding: 0;
+  }
+
+  &__thead-word {
+    margin-bottom: 9px;
+  }
+
+  &__thead-arrows {
+    display: flex;
+    gap: 13px;
+  }
+
+  &__tbody {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    left: 1px;
+    // overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 8px;
+    height: 623px;
+    width: 99%;
+
+    padding: 12px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    &-td div {
+      margin-bottom: 38px;
+      /* or in-line block according to your requirement */
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.resizer {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: w-resize;
+  z-index: 10;
+
+  &--last {
+    left: 0;
+  }
+
+  &--disabled {
+    height: 0;
+  }
+}

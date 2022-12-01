@@ -1,0 +1,95 @@
+.popUpDeleting {
+  z-index: 99;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+
+  &__buttons {
+    box-sizing: border-box;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+
+    padding: 0 44px;
+  }
+
+  &__button {
+    width: 100%;
+    height: 40px;
+
+    border: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    border-radius: 8px;
+
+    &--cancel {
+      position: relative;
+
+      background: linear-gradient(180deg, #5A8FFF 0%, #003094 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      background-color: transparent;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid transparent;
+        background: linear-gradient(360deg, #5A8FFF 0%, #003094 100%);
+        border-radius: 8px;
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+      }
+    }
+
+    &--delete {
+      color: #fff;
+      background: linear-gradient(180deg, #5A8FFF 0%, #003094 100%);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 611px;
+    height: 155px;
+    background: #F4F4F4;
+    box-shadow: -2px -2px 130px -15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    z-index: 100;
+  }
+
+  &__closeIcon {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    padding: 30px;
+  }
+}

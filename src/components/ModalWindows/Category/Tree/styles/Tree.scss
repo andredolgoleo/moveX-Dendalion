@@ -1,0 +1,79 @@
+.tree {
+  background-color: #fff;
+  border-radius: 8px;
+  
+  user-select: none;
+
+  list-style: none;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000;
+
+  margin: 0;
+  padding: 0;
+
+  &__head {
+    padding: 19px;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    // padding: 20px 0 20px 12px;
+
+  }
+
+  &__body {
+
+    // border-left: 1px solid rgba(0, 56, 174, 0.3);
+    & :nth-child(n + 1) {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: red;
+      }
+    }
+
+    padding-left: 10px;
+  }
+}
+
+.a {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #B3C4E7;
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 1px;
+    background-color: #B3C4E7;
+    top: 50%;
+    left: -24px;
+    transform: translateY(-50%);
+  }
+}

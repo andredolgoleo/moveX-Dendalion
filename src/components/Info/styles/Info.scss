@@ -1,53 +1,18 @@
-@mixin tableItemPosition {
-
-  &:nth-child(1) {
-    left: 14px;
-  }
-
-  &:nth-child(2) {
-    left: 38px;
-  }
-
-  &:nth-child(3) {
-    left: 276px;
-  }
-
-  &:nth-child(4) {
-    left: 361px;
-  }
-
-  &:nth-child(5) {
-    left: 459px;
-  }
-
-  &:nth-child(6) {
-    left: 536px;
-  }
-
-  &:nth-child(7) {
-    left: 602px;
-  }
-
-  &:nth-child(8) {
-    left: 690px;
-  }
-
-  &:nth-child(9) {
-    left: 793px;
-  }
-
-  &:nth-child(10) {
-    right: 16px;
-  }
-}
 
 .fields {
   width: 100%;
   position: relative;
 
+  &__count {
+    display: flex;
+    justify-content: center;
+  }
+
   .counter {
     display: inline-block;
-    width: 314px;
+    width: 100%;
+    max-width: 314px;
+    min-width: min-content;
     height: 40px;
 
     margin-right: 16px;
@@ -63,6 +28,9 @@
     background: #fff;
     box-shadow: -5px 5px 10px rgba(230, 230, 230, 0.2), 5px -5px 10px rgba(230, 230, 230, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(230, 230, 230, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(230, 230, 230, 0.5);
     border-radius: 8px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &:last-child {
       margin: 0;
@@ -104,19 +72,41 @@
 
   &__table {
     width: 100%;
-    height: 695px;
-    overflow: hidden;
+    // height: 695px;
+    // overflow-y     : scroll;
+    outline: none;
+    background-image: none;
+    border: none;
   }
 
   &__pagination {
-
-    position: absolute;
-
-    margin-left: 137px;
-
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 
     span {
+      display: flex;
+      align-items: center;
+
+      // font-family: 'Montserrat';
+      // font-style: normal;
+      // font-weight: 400;
+      // font-size: 12px;
+      // line-height: 15px;
+
+      // background: linear-gradient(180deg, #5A8FFF 0%, #003094 100%);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      // background-clip: text;
+      // text-fill-color: transparent;
+
+      // user-select: none;
+    }
+  }
+
+  .pagination {
+
+    &-item {
       display: flex;
       align-items: center;
 
@@ -131,23 +121,31 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
-    }
-  }
 
-  .pagination {
+      user-select: none;
+    }
+
     &__word-prev {
       margin-left: 2px;
       margin-right: 40px;
+      user-select: none;
 
-      background: #B4B4B4;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
+      cursor: pointer;
+
+      &--disabled {
+        color: #B4B4B4;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     &__word-next {
       margin-right: 2px;
+      cursor: pointer;
+      margin-left: 25px;
     }
 
     &__num {
@@ -155,6 +153,7 @@
       padding: 7px 11px;
       border-radius: 6px;
       margin-right: 29px;
+      cursor: pointer;
 
       &--active {
         background: rgba(90, 143, 255, 0.1);
@@ -163,9 +162,24 @@
   }
 }
 
+// tbody {
+//   height: 644px !important;
+// }
+
 .table {
   display: block;
   margin-top: 15px;
+
+  &__first-part {
+    display: flex;
+    align-items: center;
+  }
+
+  &__last-part {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
 
   &__checkbox {
 
@@ -176,9 +190,15 @@
 
   &__thead {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
+    box-sizing: border-box;
     height: 39px;
+    padding-left: 14px;
+    padding-right: 16px;
+    z-index: 30;
+
 
     &::after {
       content: '';
@@ -188,24 +208,34 @@
 
       position: absolute;
 
-      background: #5A8FFF;
-      opacity: 0.1;
+      left: 0;
+      top: 0;
+
+      background: #E5EAF5;
       border-radius: 8px;
       z-index: -1;
     }
 
-    tr {
-      position: absolute;
+    .table__tr {
+      z-index: 30;
+      cursor: pointer;
 
       th {
+        display: block;
+
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 15px;
+
+        text-align: start;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
-      @include tableItemPosition();
     }
   }
 
@@ -213,26 +243,36 @@
     display: flex;
     flex-direction: column;
     margin-top: 13px;
+    z-index: -1;
 
     tr {
-      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
       align-items: center;
+      width: min-content;
       height: 40px;
       background-color: #fff;
       position: relative;
       border-radius: 8px;
       margin-bottom: 13px;
 
+      padding-left: 14px;
+      padding-right: 16px;
+
+
       td {
+        display: block;
         box-sizing: border-box;
-        position: absolute;
+        // position: absolute;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 40px;
 
-        @include tableItemPosition();
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .item-status {
@@ -268,6 +308,10 @@
 
         &__icon {
           padding-left: 5px;
+
+          svg {
+            cursor: default;
+          }
         }
       }
     }
@@ -275,8 +319,11 @@
 
   &__flex-column {
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
+    padding: 0 4px;
+    width: 98.5%;
 
     tr {
       margin: 0;
@@ -284,22 +331,28 @@
   }
 }
 
-.photo__card {
-  box-sizing: border-box;
+.card {
+
   width: 316px;
-  height: 316px !important;
+  height: 316px;
+
 
   &--wrapper {
-    display: block;
-    position: relative;
+    box-sizing: border-box;
+    padding: 8px 11px;
+    padding-bottom: 0;
+    width: 316px;
+    height: 316px;
+
+    background-color: #fff;
+    border-radius: 8px;
+
   }
 
-  .card__title {
+  &__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-right: 10px;
-    // margin-left: 10px;
 
     &-text {
       font-family: 'Montserrat';
@@ -307,12 +360,15 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
+
+      margin: 0;
     }
   }
 
-  .card__under-title {
+  &__under-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -320,50 +376,148 @@
     font-size: 12px;
     line-height: 15px;
 
-    p {
-      margin: 0;
-    }
+    color: #000;
 
     .card__serial-num,
     .card__price-second {
       color: #B4B4B4;
+      margin: 0;
+    }
+
+    .card__prices {
+      margin: 0;
+    }
+
+    .card__price-second {
+      margin-left: 4px;
+    }
+  }
+
+  &__img {
+    width: 250px;
+
+    &--wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: -10px;
+  }
+
+  .item-status {
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 14px 9px 12px;
+    position: relative;
+    border-radius: 5px;
+
+    &__icon {
+      margin-left: 5px;
+    }
+
+    &__wrapper-green {
+      background: linear-gradient(180deg, #00DC4B 0%, #009231 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      &::before {
+        border-radius: 5px;
+
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(0, 220, 75, 0.1) 0%, rgba(0, 146, 49, 0.1) 100%);
+      }
+    }
+
+    &__wrapper-red {
+      background: linear-gradient(180deg, #E70000 0%, #B70000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      &::before {
+        border-radius: 5px;
+
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(231, 0, 0, 0.1) 0%, rgba(183, 0, 0, 0.1) 100%);
+      }
+    }
+  }
+
+  &__count {
+    display: flex;
+    justify-items: flex-end;
+    flex-direction: column;
+
+    &-p {
+      margin: 0;
+      text-align: right;
     }
   }
 }
 
-.card__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.simplebar-scrollbar {
+  margin-left: 3px;
 
-  img {
-    width: 250px;
-  }
 }
 
-.card__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: -10px;
+.simplebar-scrollbar::before {
+  background: #B4B4B4;
+  opacity: 0.2;
+  border-radius: 5px;
+}
 
-  div {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-  }
+.yellow {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
 
-  p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
+  background: linear-gradient(180deg, #FFC700 0%, #FF9900 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
-    margin: 0;
-  }
+.red {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+
+  background: linear-gradient(180deg, #E70000 0%, #B70000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
