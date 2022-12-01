@@ -1,7 +1,8 @@
 {
-  "Post": [
-    {
-      "name": "another name"
-    }
-  ]
+  "name": {
+    "string": [
+      "Thor",
+      "Loki"
+    ]
+  }
 }
