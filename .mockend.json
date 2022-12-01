@@ -4,5 +4,4 @@
     "comments": {
       "hasMany": "Comment"
     }
-  },
 }
