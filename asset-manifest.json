@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moveX-Dendalion/static/css/main.a201e5c2.css",
-    "main.js": "/moveX-Dendalion/static/js/main.1ebdb5fb.js",
+    "main.css": "/moveX-Dendalion/static/css/main.88cf6eaa.css",
+    "main.js": "/moveX-Dendalion/static/js/main.b68dc46b.js",
     "static/js/787.28cb0dcd.chunk.js": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js",
     "static/media/montserrat-semibold.woff": "/moveX-Dendalion/static/media/montserrat-semibold.168d5b114e5a6d216802.woff",
     "static/media/montserrat-medium.woff": "/moveX-Dendalion/static/media/montserrat-medium.124bdbbc44b5aae423df.woff",
@@ -65,14 +65,15 @@
     "static/media/message.svg": "/moveX-Dendalion/static/media/message.0b84e066842753abb7a2d97ba383e4db.svg",
     "index.html": "/moveX-Dendalion/index.html",
     "static/media/dropDown.svg": "/moveX-Dendalion/static/media/dropDown.4dea5a22b61bfe8114d74f8286b07859.svg",
+    "static/media/big-plus.svg": "/moveX-Dendalion/static/media/big-plus.2d252c9a36721cf75c0cd3773eccdcad.svg",
     "static/media/searchIcon.svg": "/moveX-Dendalion/static/media/searchIcon.94e72c56bac2248422532456dfbeb996.svg",
     "static/media/dropDownIcon.svg": "/moveX-Dendalion/static/media/dropDownIcon.4dea5a22b61bfe8114d74f8286b07859.svg",
-    "main.a201e5c2.css.map": "/moveX-Dendalion/static/css/main.a201e5c2.css.map",
-    "main.1ebdb5fb.js.map": "/moveX-Dendalion/static/js/main.1ebdb5fb.js.map",
+    "main.88cf6eaa.css.map": "/moveX-Dendalion/static/css/main.88cf6eaa.css.map",
+    "main.b68dc46b.js.map": "/moveX-Dendalion/static/js/main.b68dc46b.js.map",
     "787.28cb0dcd.chunk.js.map": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a201e5c2.css",
-    "static/js/main.1ebdb5fb.js"
+    "static/css/main.88cf6eaa.css",
+    "static/js/main.b68dc46b.js"
   ]
 }
