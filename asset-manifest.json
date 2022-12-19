@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moveX-Dendalion/static/css/main.144a68a2.css",
-    "main.js": "/moveX-Dendalion/static/js/main.cb50b4eb.js",
+    "main.css": "/moveX-Dendalion/static/css/main.52f5d4b7.css",
+    "main.js": "/moveX-Dendalion/static/js/main.e4a247be.js",
     "static/js/498.5e9a6c19.chunk.js": "/moveX-Dendalion/static/js/498.5e9a6c19.chunk.js",
     "static/js/703.f9f7df78.chunk.js": "/moveX-Dendalion/static/js/703.f9f7df78.chunk.js",
     "static/js/598.f7f34204.chunk.js": "/moveX-Dendalion/static/js/598.f7f34204.chunk.js",
@@ -22,6 +22,7 @@
     "static/media/showImageIcon.svg": "/moveX-Dendalion/static/media/showImageIcon.3c2652e26ba7aa96c70a080a37d1566a.svg",
     "static/media/trash.svg": "/moveX-Dendalion/static/media/trash.76783209a8cd69f517630e12c8fff9b0.svg",
     "static/media/closeIcon.svg": "/moveX-Dendalion/static/media/closeIcon.39a41d6b78ee0c061997e53d45856640.svg",
+    "static/media/close.svg": "/moveX-Dendalion/static/media/close.a34ce0eccdda55366419957fa279bc7d.svg",
     "static/media/popUpClose.svg": "/moveX-Dendalion/static/media/popUpClose.f2660611bfd1dc5ed33299473880075b.svg",
     "static/media/description.svg": "/moveX-Dendalion/static/media/description.6bffc27b55381a2a6a7b097535e8f57e.svg",
     "static/media/succes.svg": "/moveX-Dendalion/static/media/succes.52e0c9fdc4c7deee03c808720d64635b.svg",
@@ -31,6 +32,7 @@
     "static/media/products.svg": "/moveX-Dendalion/static/media/products.06d9ab441ced7d4a69fa1c648f2a551e.svg",
     "static/media/print.svg": "/moveX-Dendalion/static/media/print.36980e183abf14c512a4eca18b32651e.svg",
     "static/media/gift.svg": "/moveX-Dendalion/static/media/gift.78dd8e8876b26e92d1a7a789303d2322.svg",
+    "static/media/message-1.svg": "/moveX-Dendalion/static/media/message-1.3a87d6968d39b4ec5c4715ddebcd7ba5.svg",
     "static/media/doubleLabel.svg": "/moveX-Dendalion/static/media/doubleLabel.f1dcfaa4fe9ffeaeaf0f98be16734657.svg",
     "static/media/validationIcon.svg": "/moveX-Dendalion/static/media/validationIcon.46ea77f0cb6cf829924014fe2ccc037a.svg",
     "static/media/scale.svg": "/moveX-Dendalion/static/media/scale.a8ca059f07cad7d4e91ff5ff54c328b0.svg",
@@ -79,15 +81,15 @@
     "static/media/big-plus.svg": "/moveX-Dendalion/static/media/big-plus.2d252c9a36721cf75c0cd3773eccdcad.svg",
     "static/media/searchIcon.svg": "/moveX-Dendalion/static/media/searchIcon.94e72c56bac2248422532456dfbeb996.svg",
     "static/media/dropDownIcon.svg": "/moveX-Dendalion/static/media/dropDownIcon.4dea5a22b61bfe8114d74f8286b07859.svg",
-    "main.144a68a2.css.map": "/moveX-Dendalion/static/css/main.144a68a2.css.map",
-    "main.cb50b4eb.js.map": "/moveX-Dendalion/static/js/main.cb50b4eb.js.map",
+    "main.52f5d4b7.css.map": "/moveX-Dendalion/static/css/main.52f5d4b7.css.map",
+    "main.e4a247be.js.map": "/moveX-Dendalion/static/js/main.e4a247be.js.map",
     "498.5e9a6c19.chunk.js.map": "/moveX-Dendalion/static/js/498.5e9a6c19.chunk.js.map",
     "703.f9f7df78.chunk.js.map": "/moveX-Dendalion/static/js/703.f9f7df78.chunk.js.map",
     "598.f7f34204.chunk.js.map": "/moveX-Dendalion/static/js/598.f7f34204.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/moveX-Dendalion/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.144a68a2.css",
-    "static/js/main.cb50b4eb.js"
+    "static/css/main.52f5d4b7.css",
+    "static/js/main.e4a247be.js"
   ]
 }
