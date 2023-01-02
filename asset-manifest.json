@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/moveX-Dendalion/static/css/main.ff2d798f.css",
-    "main.js": "/moveX-Dendalion/static/js/main.ddb52f3f.js",
+    "main.css": "/moveX-Dendalion/static/css/main.22946f1f.css",
+    "main.js": "/moveX-Dendalion/static/js/main.029ef130.js",
     "static/js/746.ce30a802.chunk.js": "/moveX-Dendalion/static/js/746.ce30a802.chunk.js",
     "static/js/858.9c9ed763.chunk.js": "/moveX-Dendalion/static/js/858.9c9ed763.chunk.js",
-    "static/js/324.ddca74f8.chunk.js": "/moveX-Dendalion/static/js/324.ddca74f8.chunk.js",
+    "static/js/324.7af4aabd.chunk.js": "/moveX-Dendalion/static/js/324.7af4aabd.chunk.js",
     "static/media/montserrat-semibold.woff": "/moveX-Dendalion/static/media/montserrat-semibold.168d5b114e5a6d216802.woff",
     "static/media/montserrat-medium.woff": "/moveX-Dendalion/static/media/montserrat-medium.124bdbbc44b5aae423df.woff",
     "static/media/montserrat-regular.woff": "/moveX-Dendalion/static/media/montserrat-regular.327fab0afc997a2d9b16.woff",
@@ -40,6 +40,7 @@
     "static/media/boxes.svg": "/moveX-Dendalion/static/media/boxes.e20b8767767ebc795c3d151ce8ed9ab1.svg",
     "static/media/orientation.svg": "/moveX-Dendalion/static/media/orientation.a0552d3801779735a1e1845f1f98f08e.svg",
     "static/media/minPrice.svg": "/moveX-Dendalion/static/media/minPrice.40b351ad6f4e4fed28667b6958436b72.svg",
+    "static/media/asterisk.svg": "/moveX-Dendalion/static/media/asterisk.25a449273f1dee3bb68c9fafe2ce2d0a.svg",
     "static/media/label1.svg": "/moveX-Dendalion/static/media/label1.09447f5bfebf5c40d1a8236bff44027f.svg",
     "static/media/label.svg": "/moveX-Dendalion/static/media/label.76ef6c282773fd1073e810e217018e12.svg",
     "static/media/reverseCardIcon.svg": "/moveX-Dendalion/static/media/reverseCardIcon.a75c53f5a5c1bf8bb21bd7bca13e3b63.svg",
@@ -82,14 +83,14 @@
     "static/media/big-plus.svg": "/moveX-Dendalion/static/media/big-plus.2d252c9a36721cf75c0cd3773eccdcad.svg",
     "static/media/searchIcon.svg": "/moveX-Dendalion/static/media/searchIcon.94e72c56bac2248422532456dfbeb996.svg",
     "static/media/dropDownIcon.svg": "/moveX-Dendalion/static/media/dropDownIcon.4dea5a22b61bfe8114d74f8286b07859.svg",
-    "main.ff2d798f.css.map": "/moveX-Dendalion/static/css/main.ff2d798f.css.map",
-    "main.ddb52f3f.js.map": "/moveX-Dendalion/static/js/main.ddb52f3f.js.map",
+    "main.22946f1f.css.map": "/moveX-Dendalion/static/css/main.22946f1f.css.map",
+    "main.029ef130.js.map": "/moveX-Dendalion/static/js/main.029ef130.js.map",
     "746.ce30a802.chunk.js.map": "/moveX-Dendalion/static/js/746.ce30a802.chunk.js.map",
     "858.9c9ed763.chunk.js.map": "/moveX-Dendalion/static/js/858.9c9ed763.chunk.js.map",
-    "324.ddca74f8.chunk.js.map": "/moveX-Dendalion/static/js/324.ddca74f8.chunk.js.map"
+    "324.7af4aabd.chunk.js.map": "/moveX-Dendalion/static/js/324.7af4aabd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff2d798f.css",
-    "static/js/main.ddb52f3f.js"
+    "static/css/main.22946f1f.css",
+    "static/js/main.029ef130.js"
   ]
 }
